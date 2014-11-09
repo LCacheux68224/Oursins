@@ -11,7 +11,7 @@ Ce fichier doit contenir trois colonnes au minimum :
 ### 2. Un fond de carte (points ou polygones).
 Le fond de carte permet d'obtenir automatiquement les coordonnées des points de départs et d'arrivées des déplacements.
 
-## Mise en œuvre : 
+## Utilisation : 
 L'analyse en oursins se lance depuis le menu « **_Vecteur\Outils statistiques\Analyse en oursins_** »
 Renseigner les différents paramètres:
 * **Table de flux**-> Table de données contenant la liste des déplacements
