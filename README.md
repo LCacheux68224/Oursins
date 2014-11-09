@@ -26,7 +26,7 @@ Les filtres sont destinés à limiter le nombre de flux représentés. Il est po
 Il est possible également de ne sélectionner qu'une partie des entités du fond de carte pour limiter l'analyse à une zone plus restreinte.
 
 ### Deux sorties sont proposées : 
-* Une sortie sous forme de carte mémoire qui nécessite l'extension « **Memory Layer Saver** » pour que le fond puisse être enregistré en parallèle au projet dans un fichier _NomDuProjet.qgs.mldata_ ;
+* Une sortie sous forme de carte mémoire qui nécessite l'extension « **Memory Layer Saver** » pour que le fond puisse être enregistré en parallèle au projet dans un fichier _NomDuProjet.qgs.mldata_ ;
 * Une sortie sous forme de fond Shapefile classique.
 
 
