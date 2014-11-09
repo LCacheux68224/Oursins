@@ -14,7 +14,7 @@ Le fond de carte permet d'obtenir automatiquement les coordonnées des points de
 ## Utilisation : 
 L'analyse en oursins se lance depuis le menu « **_Vecteur\Outils statistiques\Analyse en oursins_** »
 
-Renseigner les différents paramètres :
+Renseigner les paramètres suivants :
 * **Table de flux**-> Table de données contenant la liste des déplacements ;
 * **Origine** -> Identifiant géographique du lieu de départ ;
 * **Destination** -> Identifiant géographique du lieu d'arrivée ;
