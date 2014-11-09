@@ -9,6 +9,8 @@ Ce fichier doit contenir trois colonnes au minimum :
 * Un identifiant géographique du lieu d'arrivée du déplacement ;
 * Le volume du flux observé, c'est à dire le nombre de personnes effectuant le déplacement.
 
+![](https://raw.githubusercontent.com/LCacheux68224/Oursins/master/ImageDoc/Table.png)
+
 ### 2. Un fond de carte (points ou polygones).
 Le fond de carte permet d'obtenir automatiquement les coordonnées des points de départs et d'arrivées des déplacements.
 
