@@ -1,4 +1,5 @@
 # Analyse en oursins
+###_(Extension pour Qgis 2.0.1 et +)_
 L'analyse en oursins permet de représenter des déplacements pendulaires sur une carte pour mettre en évidence des pôles d'attractivités, par exemple pour l'étude de déplacements domicile-travail. 
 
 ## Deux fichiers sont nécessaires :
