@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/oursins" >
+        <file>oursins.png</file>
+    </qresource>
+</RCC>
