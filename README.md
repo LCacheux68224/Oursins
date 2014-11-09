@@ -1,6 +1,3 @@
-Oursins
-=======
-
 # Analyse en oursins
 L'analyse en oursins permet de représenter des déplacements pendulaires sur une carte pour mettre en évidence des pôles d'attractivités, par exemple pour l'étude de déplacements domicile-travail. 
 
