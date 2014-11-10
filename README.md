@@ -1,7 +1,7 @@
 # Analyse en oursins
 ###_(Extension pour Qgis 2.0.1 et +)_
 L'analyse en oursins permet de représenter des déplacements pendulaires sur une carte pour mettre en évidence des pôles d'attractivités, par exemple pour l'étude de déplacements domicile-travail. 
-![](https://raw.githubusercontent.com/LCacheux68224/Oursins/master/ImageDoc/oursin1.png)
+![](https://raw.githubusercontent.com/LCacheux68224/ImagesForDoc/master/Oursins/oursin1.png)
 
 ## Deux fichiers sont nécessaires :
 ### 1. Un table de données contenant les paramètres des déplacements ;
@@ -10,7 +10,7 @@ Ce fichier doit contenir trois colonnes au minimum :
 * Un identifiant géographique du lieu d'arrivée du déplacement ;
 * Le volume du flux observé, c'est à dire le nombre de personnes effectuant le déplacement.
 
-![](https://raw.githubusercontent.com/LCacheux68224/Oursins/master/ImageDoc/Table.png)
+![](https://raw.githubusercontent.com/LCacheux68224/ImagesForDoc/master/Oursins/Table.png)
 
 Dans cet exemple **COMR** est l'identifiant de la commune de résidence et **COMT** celui de la commune du lieu de travail. **FLUX** correspond au nombre de personnes effectuant ce trajet.
 
@@ -20,7 +20,7 @@ Le fond de carte permet d'obtenir automatiquement les coordonnées des points de
 ## Utilisation : 
 L'analyse en oursins se lance soit depuis le menu « **_Vecteur\Outils statistiques\Analyse en oursins_** »,
 soit en cliquant sur l'icône
-![](https://raw.githubusercontent.com/LCacheux68224/Oursins/master/ImageDoc/oursins.png)
+![](https://raw.githubusercontent.com/LCacheux68224/ImagesForDoc/master/Oursins/oursins.png)
 
 Renseigner les paramètres suivants :
 * **Table de flux**-> Table de données contenant la liste des déplacements ;
@@ -34,7 +34,7 @@ Les filtres sont destinés à limiter le nombre de flux représentés. Il est po
 
 Il est possible également de ne sélectionner qu'une partie des entités du fond de carte pour limiter l'analyse à une zone plus restreinte.
 
-![](https://raw.githubusercontent.com/LCacheux68224/Oursins/master/ImageDoc/oursin2.png)
+![](https://raw.githubusercontent.com/LCacheux68224/ImagesForDoc/master/Oursins/oursin2.png)
 
 ### Deux sorties sont proposées : 
 * Une sortie sous forme de carte mémoire qui nécessite l'extension « **Memory Layer Saver** » pour que le fond puisse être enregistré en parallèle au projet dans un fichier _NomDuProjet.qgs.mldata_ ;
