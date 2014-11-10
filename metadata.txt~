@@ -13,8 +13,8 @@ name=Oursins
 qgisMinimumVersion=2.0
 description=Maps of migrations flows
 description[fr]=Cartes en oursins  
-about=Creates maps of migrations flows like a spider diagram. The origin and destination coordinates are extracted from a layer. For memory layer output, make sure that you have installed the plugin Memory Layer Saver before, so that all memory layers can be saved to a qdatastream file along the project named myqgisprojectname.qgs.mldata.
-about[fr]=Création de cartes de flux migratoires (oursins). Les coordonnées d'origine et de destination des déplacements sont extraites d'un fond cartographique. Si vous utilisez une sortie mémoire pour votre carte en oursins, assurez vous d'avoir installé l'extension Memory Layer Saver au préalable pour pouvoir enregistrer votre analyse dans un fichier Qdatastream (fichier : nomProjetQgis.qgs.mldata).
+about=Creates maps of migrations flows by extracting the coordinates of origin and destination from a layer. For memory layer output, make sure that you have installed the plugin Memory Layer Saver before, so that all memory layers can be saved to a qdatastream file along the project named myqgisprojectname.qgs.mldata.
+about[fr]=Création de cartes de flux migratoires (oursins) en extrayant les coordonnées d'origine et de destination à partir d'un fond cartographique. Si vous utilisez une sortie mémoire pour votre carte en oursins, assurez vous d'avoir installé l'extension Memory Layer Saver au préalable pour pouvoir enregistrer votre analyse dans un fichier Qdatastream (fichier : nomProjetQgis.qgs.mldata).
 version=1.0
 
 
