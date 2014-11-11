@@ -88,7 +88,7 @@ class Oursins:
             self.iface.addPluginToMenu(text, self.action)
 
     def unload(self):
-        text = QtGui.QApplication.translate("Oursins","Oursins", None, QtGui.QApplication.UnicodeUTF8)
+        text = QtGui.QApplication.translate("Oursins","Flow maps (oursins)", None, QtGui.QApplication.UnicodeUTF8)
         if hasattr( self.iface, 'removePluginVectorMenu' ):
             self.iface.removePluginVectorMenu(text, self.action )
         else:
