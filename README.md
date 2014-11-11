@@ -23,7 +23,7 @@ Dans cet exemple **COMR** est l'identifiant de la commune de résidence et **COM
 Le fond de carte permet d'obtenir automatiquement les coordonnées des points de départs et d'arrivées des déplacements.
 
 ## Utilisation : 
-L'analyse en oursins se lance soit depuis le menu « **_Vecteur\Outils statistiques\Analyse en oursins_** »,
+L'analyse en oursins se lance soit depuis le menu « **_Vecteur\Analyse en oursins_** »,
 soit en cliquant sur l'icône
 ![](https://raw.githubusercontent.com/LCacheux68224/ImagesForDoc/master/Oursins/oursins.png)
 
