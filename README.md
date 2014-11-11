@@ -1,7 +1,13 @@
 # Analyse en oursins
 ###_(Extension pour Qgis 2.0.1 et +)_
 L'analyse en oursins permet de représenter des déplacements pendulaires sur une carte pour mettre en évidence des pôles d'attractivités, par exemple pour l'étude de déplacements domicile-travail. 
+
+####Exemple : Déplacements domicile-travail des actifs occupés résidant dans le Haut-Rhin en 2011 et travaillant dans le département.<br>
+(Flux de 50 personnes ou plus)
 ![](https://raw.githubusercontent.com/LCacheux68224/ImagesForDoc/master/Oursins/oursin1.png)
+_Source : Insee, RP2011 au lieu de résidence_<br>
+_Champ : actifs occupés résidant dans le Haut-Rhin et travaillant dans le département._<br>
+_Fond de carte : centroïdes calculés à partir d'un fond communal OpenStreetMap_
 
 ## Deux fichiers sont nécessaires :
 ### 1. Un table de données contenant les paramètres des déplacements ;
@@ -34,7 +40,8 @@ Les filtres sont destinés à limiter le nombre de flux représentés. Il est po
 
 Il est possible également de ne sélectionner qu'une partie des entités du fond de carte pour limiter l'analyse à une zone restreinte.
 
-![](https://raw.githubusercontent.com/LCacheux68224/ImagesForDoc/master/Oursins/oursin3.png)
+![](https://raw.githubusercontent.com/LCacheux68224/ImagesForDoc/master/Oursins/oursin3.png)<br>
+_Fond de carte : OpenStreetMap_
 
 ### Deux sorties sont proposées : 
 * Une sortie sous forme de carte mémoire qui nécessite l'extension « **Memory Layer Saver** » pour que le fond puisse être enregistré en parallèle au projet dans un fichier _NomDuProjet.qgs.mldata_ ;
