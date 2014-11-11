@@ -76,7 +76,7 @@ class Oursins:
         # connect the action to the run method
         self.action.triggered.connect(self.run)
 
-        text = QtGui.QApplication.translate("Oursins","Statistical tools", None, QtGui.QApplication.UnicodeUTF8)
+        # text = QtGui.QApplication.translate("Oursins","Oursins", None, QtGui.QApplication.UnicodeUTF8)
         # Add toolbar button and menu item
         if hasattr( self.iface, 'addDatabaseToolBarIcon' ):
             self.iface.addVectorToolBarIcon(self.action)
@@ -88,7 +88,7 @@ class Oursins:
             self.iface.addPluginToMenu(text, self.action)
 
     def unload(self):
-        text = QtGui.QApplication.translate("Oursins","Statistical tools", None, QtGui.QApplication.UnicodeUTF8)
+        text = QtGui.QApplication.translate("Oursins","Oursins", None, QtGui.QApplication.UnicodeUTF8)
         if hasattr( self.iface, 'removePluginVectorMenu' ):
             self.iface.removePluginVectorMenu(text, self.action )
         else:
