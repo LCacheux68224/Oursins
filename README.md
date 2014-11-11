@@ -6,7 +6,6 @@ L'analyse en oursins permet de représenter des déplacements pendulaires sur un
 (Flux de 50 personnes ou plus)
 ![](https://raw.githubusercontent.com/LCacheux68224/ImagesForDoc/master/Oursins/oursin1.png)
 _Source : Insee, RP2011 au lieu de résidence_<br>
-_Champ : actifs occupés résidant dans le Haut-Rhin et travaillant dans le département._<br>
 _Fond de carte : centroïdes calculés à partir d'un fond communal OpenStreetMap_
 
 ## Deux fichiers sont nécessaires :
