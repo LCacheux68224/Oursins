@@ -32,7 +32,7 @@ Renseigner les paramètres suivants :
 
 Les filtres sont destinés à limiter le nombre de flux représentés. Il est possible de représenter soit tous les flux, soit seulement ceux dépassant une certaine valeur. De même il est possible de ne pas représenter les flux au delà d'une certaine distance. (_La valeur 0 désactive le fitre_) 
 
-Il est possible également de ne sélectionner qu'une partie des entités du fond de carte pour limiter l'analyse à une zone plus restreinte.
+Il est possible également de ne sélectionner qu'une partie des entités du fond de carte pour limiter l'analyse à une zone restreinte.
 
 ![](https://raw.githubusercontent.com/LCacheux68224/ImagesForDoc/master/Oursins/oursin3.png)
 
