@@ -27,9 +27,6 @@ from ui_oursins import Ui_Oursins
 
 # which provide convenience functions for handling QGIS vector layers
 import sys, os, imp
-import fTools
-path = os.path.dirname(fTools.__file__)
-ftu = imp.load_source('ftools_utils', os.path.join(path,'tools','ftools_utils.py'))
 
 
 class OursinsDialog(QtGui.QDialog, Ui_Oursins):
@@ -90,15 +87,15 @@ class OursinsDialog(QtGui.QDialog, Ui_Oursins):
         self.outputFilename.setText(fileName)
 
     def populateLayers( self ):
-	self.inputLayers.clear()     #InputLayer
+	self.inputLayers.clear()     #InputLayer 
         myListLayers = []
-        myListLayers = ftu.getLayerNames( [ qgis.QGis.Polygon, qgis.QGis.Point ] )
+        myListLayers = [layer.name() for layer in qgis.QgsMapLayerRegistry.instance().mapLayers().values() if layer.geometryType() == qgis.QGis.Polygon or layer.geometryType() == qgis.QGis.Point ]
         self.inputLayers.addItems( myListLayers )
 
     def populateTables( self ):
 	self.inputFlowTable.clear()     #InputTable
         myList = []
-        myList = ftu.getLayerNames([qgis.QGis.NoGeometry])
+        myList = [layer.name() for layer in qgis.QgsMapLayerRegistry.instance().mapLayers().values() if layer.geometryType() == qgis.QGis.NoGeometry ]
         self.inputFlowTable.addItems( myList )
 
     def populateAttributesLayers( self ):

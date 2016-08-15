@@ -38,10 +38,7 @@ from qgis.utils import *
 from PyQt4.QtGui import QProgressBar
 from qgis.gui import QgsMessageBar
 from qgis.utils import iface
-# Import the utilities from the fTools plugin (a standard QGIS plugin),
-# which provide convenience functions for handling QGIS vector layers
 import sys, os, imp
-import fTools
 
 class Oursins:
 
@@ -60,9 +57,6 @@ class Oursins:
 
             if qVersion() > '4.3.3':
                 QCoreApplication.installTranslator(self.translator)
-
-	path = os.path.dirname(fTools.__file__)
-	self.ftu = imp.load_source('ftools_utils', os.path.join(path,'tools','ftools_utils.py'))
 
         # Create the dialog (after translation) and keep reference
         self.dlg = OursinsDialog()
@@ -98,7 +92,7 @@ class Oursins:
         else:
             self.iface.removeToolBarIcon(self.action)
 
-    # run method that performs all the real work
+    # run method that performs all the real work 
     def run(self):
         # Populate the combo boxes
         self.dlg.populateLayers()
@@ -128,7 +122,7 @@ class Oursins:
 
 		    QApplication.setOverrideCursor( QCursor( Qt.WaitCursor ) )  # processing
 
-		    inputLayer = self.ftu.getMapLayerByName(self.dlg.inputLayers.currentText())  # layer used for coordinates extraction
+		    inputLayer = QgsMapLayerRegistry.instance().mapLayersByName(self.dlg.inputLayers.currentText())[0]
 
 
 		    # Restrict to selected features 
@@ -139,7 +133,7 @@ class Oursins:
 
 		    geographicIdName = self.dlg.geographicVar.currentText()
 		    IdIndex = inputLayer.fieldNameIndex(geographicIdName)
-		    inputTable = self.ftu.getMapLayerByName(self.dlg.inputFlowTable.currentText())  
+		    inputTable = QgsMapLayerRegistry.instance().mapLayersByName(self.dlg.inputFlowTable.currentText())[0]
 		    originVarName = self.dlg.originVar.currentText()
 		    originIndex = inputTable.fieldNameIndex(originVarName)
 		    destinationVarName = self.dlg.destinationVar.currentText()
