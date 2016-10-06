@@ -86,16 +86,18 @@ class OursinsDialog(QtGui.QDialog, Ui_Oursins):
             return
         self.outputFilename.setText(fileName)
 
-    def populateLayers( self ):
+    def populateLayers( self):
 	self.inputLayers.clear()     #InputLayer 
         myListLayers = []
-        myListLayers = [layer.name() for layer in qgis.QgsMapLayerRegistry.instance().mapLayers().values() if layer.geometryType() == qgis.QGis.Polygon or layer.geometryType() == qgis.QGis.Point ]
+        myListLayers = [layer.name() for layer in qgis.QgsMapLayerRegistry.instance().mapLayers().values() 
+            if hasattr(layer, 'geometryType') and (layer.geometryType() == qgis.QGis.Polygon or layer.geometryType() == qgis.QGis.Point) ]
         self.inputLayers.addItems( myListLayers )
 
     def populateTables( self ):
 	self.inputFlowTable.clear()     #InputTable
         myList = []
-        myList = [layer.name() for layer in qgis.QgsMapLayerRegistry.instance().mapLayers().values() if layer.geometryType() == qgis.QGis.NoGeometry ]
+        myList = [layer.name() for layer in qgis.QgsMapLayerRegistry.instance().mapLayers().values() 
+            if hasattr(layer, 'geometryType') and layer.geometryType() == qgis.QGis.NoGeometry ]
         self.inputFlowTable.addItems( myList )
 
     def populateAttributesLayers( self ):
