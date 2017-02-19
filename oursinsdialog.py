@@ -108,7 +108,7 @@ class OursinsDialog(QtGui.QDialog, Ui_Oursins):
             layer = qgis.QgsMapLayerRegistry.instance().mapLayersByName(layerName)[0]
             fieldList = [field.name()
                for field in list(layer.pendingFields().toList())
-               if field.type() not in (QtCore.QVariant.Double, QtCore.QVariant.Int)]
+               if field.type() not in (QtCore.QVariant.Double, QtCore.QVariant.Int, QtCore.QVariant.UInt, QtCore.QVariant.LongLong,QtCore.QVariant.ULongLong)]
             self.geographicVar.addItems(fieldList)
 
     def populateAttributesTables( self ):
@@ -121,12 +121,14 @@ class OursinsDialog(QtGui.QDialog, Ui_Oursins):
             layer = qgis.QgsMapLayerRegistry.instance().mapLayersByName(layerName)[0]
             fieldList = [field.name()
                for field in list(layer.pendingFields().toList())
-               if field.type() not in (QtCore.QVariant.Double, QtCore.QVariant.Int)]
+               if field.type() not in (QtCore.QVariant.Double, QtCore.QVariant.Int, QtCore.QVariant.UInt, QtCore.QVariant.LongLong, QtCore.QVariant.ULongLong)]
             self.originVar.addItems(fieldList)
             self.destinationVar.addItems(fieldList)
             fieldList2 = [field.name()
                for field in list(layer.pendingFields().toList())
-               if field.type() in (QtCore.QVariant.Double, QtCore.QVariant.Int)]
+               if field.type() in (QtCore.QVariant.Double, QtCore.QVariant.Int, QtCore.QVariant.Int, QtCore.QVariant.LongLong, QtCore.QVariant.ULongLong)]
             self.flowValue.addItems(fieldList2)
 
+
+0
 
