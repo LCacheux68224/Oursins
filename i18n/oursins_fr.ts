@@ -4,84 +4,84 @@
 <context>
     <name>Oursins</name>
     <message>
-        <location filename="ui_oursins.ui" line="32"/>
+        <location filename="../ui_oursins.py" line="290"/>
         <source>Flow map (Oursins)</source>
-        <translation>Analyse en oursins</translation>
+        <translation type="unfinished">Analyse en oursins</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="86"/>
+        <location filename="../ui_oursins.py" line="291"/>
         <source>Flow table</source>
-        <translation>Table de flux</translation>
+        <translation type="unfinished">Table de flux</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="96"/>
+        <location filename="../ui_oursins.py" line="292"/>
         <source>Origin</source>
-        <translation>Origine</translation>
+        <translation type="unfinished">Origine</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="106"/>
+        <location filename="../ui_oursins.py" line="293"/>
         <source>Destination</source>
-        <translation>Destination</translation>
+        <translation type="unfinished">Destination</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="116"/>
+        <location filename="../ui_oursins.py" line="294"/>
         <source>Value</source>
-        <translation>Flux</translation>
+        <translation type="unfinished">Flux</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="206"/>
+        <location filename="../ui_oursins.py" line="295"/>
         <source>Extract coordinates from a layer</source>
-        <translation>Extraction de coordonnées depuis un fond de carte</translation>
+        <translation type="unfinished">Extraction de coordonnées depuis un fond de carte</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="233"/>
+        <location filename="../ui_oursins.py" line="296"/>
         <source>layer</source>
-        <translation>Fond de carte</translation>
+        <translation type="unfinished">Fond de carte</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="240"/>
+        <location filename="../ui_oursins.py" line="297"/>
         <source>Geographic ID</source>
-        <translation>Identifiant géographique</translation>
+        <translation type="unfinished">Identifiant géographique</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="309"/>
+        <location filename="../ui_oursins.py" line="302"/>
         <source>Output :</source>
-        <translation>Sortie :</translation>
+        <translation type="unfinished">Sortie :</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="318"/>
+        <location filename="../ui_oursins.py" line="303"/>
         <source>Memory</source>
-        <translation>Mémoire</translation>
+        <translation type="unfinished">Mémoire</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="328"/>
+        <location filename="../ui_oursins.py" line="304"/>
         <source>Shapefile</source>
-        <translation>Shapefile</translation>
+        <translation type="unfinished">Shapefile</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="360"/>
+        <location filename="../ui_oursins.py" line="305"/>
         <source>File name</source>
-        <translation>Nom du fichier</translation>
+        <translation type="unfinished">Nom du fichier</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="388"/>
+        <location filename="../ui_oursins.py" line="306"/>
         <source>...</source>
-        <translation>…</translation>
+        <translation type="unfinished">…</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="409"/>
+        <location filename="../ui_oursins.py" line="307"/>
         <source>add to the canvas</source>
-        <translation>ajouter au canevas</translation>
+        <translation type="unfinished">ajouter au canevas</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="453"/>
+        <location filename="../ui_oursins.py" line="299"/>
         <source>Filters</source>
-        <translation>Filtres</translation>
+        <translation type="unfinished">Filtres</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="487"/>
+        <location filename="../ui_oursins.py" line="300"/>
         <source>Min value</source>
-        <translation>Flux min</translation>
+        <translation type="unfinished">Flux min</translation>
     </message>
     <message>
         <location filename="ui_oursins.ui" line="516"/>
@@ -89,44 +89,49 @@
         <translation type="obsolete">Distance max</translation>
     </message>
     <message>
-        <location filename="oursins.py" line="211"/>
+        <location filename="../oursins.py" line="229"/>
         <source>Attention</source>
-        <translation>Attention</translation>
+        <translation type="unfinished">Attention</translation>
     </message>
     <message>
-        <location filename="oursins.py" line="212"/>
+        <location filename="../oursins.py" line="230"/>
         <source>No valid datas found !</source>
-        <translation>aucun flux à représenter !</translation>
+        <translation type="unfinished">aucun flux à représenter !</translation>
     </message>
     <message>
-        <location filename="ui_oursins.ui" line="516"/>
+        <location filename="../ui_oursins.py" line="301"/>
         <source>Max distance (km)</source>
-        <translation>Distance max (km)</translation>
+        <translation type="unfinished">Distance max (km)</translation>
     </message>
     <message>
-        <location filename="oursins.py" line="124"/>
+        <location filename="../oursins.py" line="119"/>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation type="unfinished">Erreur</translation>
     </message>
     <message>
-        <location filename="oursins.py" line="121"/>
+        <location filename="../oursins.py" line="116"/>
         <source>Nothing to do !...</source>
-        <translation>Pas de données à analyser !...</translation>
+        <translation type="unfinished">Pas de données à analyser !...</translation>
     </message>
     <message>
-        <location filename="oursins.py" line="125"/>
+        <location filename="../oursins.py" line="120"/>
         <source>no valid shapefile name for output</source>
-        <translation>nom de fichier de sortie inexistant ou non erroné</translation>
+        <translation type="unfinished">nom de fichier de sortie inexistant ou non erroné</translation>
     </message>
     <message>
-        <location filename="oursins.py" line="71"/>
+        <location filename="../oursins.py" line="86"/>
         <source>Flow maps (oursins)</source>
-        <translation>Analyse en oursins</translation>
+        <translation type="unfinished">Analyse en oursins</translation>
     </message>
     <message>
         <location filename="oursins.py" line="91"/>
         <source>Statistical tools</source>
-        <translation>Outils statistiques</translation>
+        <translation type="obsolete">Outils statistiques</translation>
+    </message>
+    <message>
+        <location filename="../ui_oursins.py" line="298"/>
+        <source>draw curved lines</source>
+        <translation type="unfinished">Tracer des courbes</translation>
     </message>
 </context>
 </TS>

@@ -10,12 +10,12 @@
 
 [general]
 name=Oursins
-qgisMinimumVersion=2.0
+qgisMinimumVersion=2.14
 description=The flow maps created with this plugin show the movement of people or goods between places by drawing lines connecting those places.
 description[fr]=Les cartes de flux, où cartes en oursins, permettent de mettre en évidence les pôles d'attractivité en matérialisant les déplacements de personnes ou de marchandises par des lignes.   
 about=The coordinates of origin and destination of the movements are extracted from a cartographic layer. If you use a memory output for your map, make sure to have installed the extension Memory Layer Saver first to be able to save your analysis in a file Qdatastream (example : QgisProjectName.mldata).
 about[fr]=Les coordonnées des points de départ et de destination des déplacements sont extraites d'une couche cartographique (points ou polygones). Si vous utilisez une sortie de la mémoire de votre carte, assurez-vous d'avoir installé la couche d'extension de mémoire Saver premier à être en mesure de sauver votre analyse dans un fichier QDataStream (exemple: QgisProjectName mldata).
-version=1.0.4
+version=1.1.0
 
 
 # end of mandatory metadata
@@ -24,6 +24,7 @@ version=1.0.4
 
 # Uncomment the following line and add your changelog entries:
 changelog=
+	1.1.0 - Lines changed to curves for Qgis >= 2.14 (enhancement proposed and developped by Sébastien Barre)
 	1.0.4 - Bug fix : long integer was ignored in the list of available attributes
     1.0.3 - Bug fix if rasterlayer is present
     1.0.2 - Ftools dependency removed
