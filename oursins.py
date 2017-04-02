@@ -7,6 +7,7 @@
                               -------------------
         begin                : 2014-10-04
         copyright            : (C) 2014 by Lionel Cacheux
+								           Sébastien Barre
         email                : lionel.cacheux@gmx.fr
  ***************************************************************************/
 
@@ -162,15 +163,38 @@ class Oursins:
 
 		    linesList = []
 		    for elem in flowTable:
+		        outFeat = QgsFeature()
+		        # Create a QgsCircularStringV2
+		        circularRing = QgsCircularStringV2()
 		        if elem[1] != elem[2]:
 		            #vertexList =[]   
-		            outFeat = QgsFeature()
-		            vertexList = [QgsPoint(elem[3]), QgsPoint(elem[4])]
-		            outFeat.setGeometry(QgsGeometry.fromPolyline(vertexList))
-		            outFeat.setAttributes([elem[1], elem[2], elem[0],elem[5]/1000.0])
+		            #vertexList = [QgsPoint(elem[3]), QgsPoint(elem[4])]
+		            dX = (QgsPoint(elem[4]).x()-QgsPoint(elem[3]).x())/2
+		            dY = (QgsPoint(elem[4]).y()-QgsPoint(elem[3]).y())/2
+		            X2 = QgsPoint(elem[3]).x() + dX 
+		            Y2 = QgsPoint(elem[3]).y() + dY					
+		            if self.dlg.curved.isChecked():
+		                X2 = X2 -dY/5
+		                Y2 = Y2 +dX/5					
+					
+		            # Set first point, intermediate point for curvature and end point
+		            circularRing.setPoints([QgsPointV2(elem[3]),QgsPointV2(X2, Y2),QgsPointV2(elem[4])])
+		        else:
+		            X2 = QgsPoint(elem[3]).x() - 500
+		            Y2 = QgsPoint(elem[3]).y() + 2000
+		            X3 = QgsPoint(elem[3]).x() - 1000
+		            Y3 = QgsPoint(elem[3]).y()
+		            # Set first point, intermediate point for curvature and end point
+		            circularRing.setPoints([QgsPointV2(elem[3]),QgsPointV2(X2, Y2),QgsPointV2(X3, Y3)])
+		        # Create geometry using the instance of QgsCircularStringV2
+		        geom_from_curve = QgsGeometry(circularRing)
+		        #outFeat.setGeometry(QgsGeometry.fromPolyline(vertexList))
+		        outFeat.setGeometry(geom_from_curve)
+		        outFeat.setAttributes([elem[1], elem[2], elem[0],elem[5]/1000.0])
 
-		            linesList.append(outFeat)
-		            del outFeat
+		        linesList.append(outFeat)
+		        del outFeat
+          
 		    outputLayer.addFeatures(linesList)
 		    outputLayer.commitChanges()
 		    outputLayer.setSelectedFeatures([])
@@ -240,7 +264,7 @@ class Oursins:
 
         for elem in flowTable.getFeatures():
             try:
-                if elem.attributes()[indexValue] and elem.attributes()[indexDestination] and elem.attributes()[indexOrigin] and (elem.attributes()[indexDestination] != elem.attributes()[indexOrigin]):
+                if elem.attributes()[indexValue] and elem.attributes()[indexDestination] and elem.attributes()[indexOrigin]:# and (elem.attributes()[indexDestination] != elem.attributes()[indexOrigin]):
                     value = float(elem.attributes()[indexValue])
 
                     originID = elem.attributes()[indexOrigin]
