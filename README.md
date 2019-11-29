@@ -1,5 +1,6 @@
 **Remplacé par *Thematic* pour Qgis 3.4 et +**  
-https://github.com/LCacheux68224/Thematic
+https://github.com/LCacheux68224/Thematic   
+--------
 
 # Analyse en oursins
 ###_(Extension pour Qgis 2.0.1 et +)_
